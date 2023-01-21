@@ -474,13 +474,15 @@
           point: function () {
 
           
+            setInterval(givePoint, 1000);
+          function givePoint(){
             if(p=>1){
               p++;
             }
+
+            
             document.getElementById("total_points").innerHTML = "Points: " + p ;
-            for(d = 1; d < q; d++){
-              
-            }
+          }
             
             
           },
