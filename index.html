@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FuzeSonic Indev 3</title>
+  <link rel="icon" type="image/png" href="https://fuzesonic.sharkdevinc.repl.co/images/favicon.png?v=2"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id='landing'>
+    <span style="color:#FF0000; font-size: 400%;">F</span>
+    <span style="color:#66CC66; font-size: 400%;">U</span>
+    <span style="color:#FF9966; font-size: 400%;">Z</span>
+    <span style="color:#FFCCCC; font-size: 400%;">E &nbsp;</span>
+    <span style="color:#FF0000; font-size: 400%;">S</span>
+    <span style="color:#66CC66; font-size: 400%;">O</span>
+    <span style="color:#FF9966; font-size: 400%;">N</span>
+    <span style="color:#FFCCCC; font-size: 400%;">I</span>
+    <span style="color:#FF0066; font-size: 400%;">C</span>
+    <br>
+    <br>
+  </div>
+  <br>
+  <!-- Start off with character and character needs to go around house and unplug all of the cables, or else the house EXPLODES -->
+  <center id=¨backgroundTag¨>
+    <div id='button'>
+      <span>
+
+
+        <button type="button" class="functionButton2" onclick="sendSettingsPage()">Settings</button>
+
+        <button type="button" class="functionButton1" onclick='sendStartGame()'>Start Game</button>
+
+        <button type="button" class="functionButton3" onclick="pixelFiller()">Random button</button>
+    </div>
+  </center>
+ <script>
+   /*
+    function pixelFiller() {
+r = Math.floor(Math.random() * 255) + 1;
+b = Math.floor(Math.random() * 255) + 1;
+g = Math.floor(Math.random() * 255) + 1;
+console.log("hi");
+document.getElementbyId("backgroundTag").style.background = rgb(r, g, b);
+ -->
+    } 
+   */
+    function sendStartGame() {
+      window.location.href="/public/play";
+    }
+    function sendSettingsPage() {
+      window.location.href="/settings";
+    }
+  </script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
